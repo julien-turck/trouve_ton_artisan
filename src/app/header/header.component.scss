@@ -1,0 +1,11 @@
+header{
+    background-color: #fff;
+    box-shadow: 0 .2rem .6rem rgba(0,0,0,.0793474);
+    display: flex;
+}
+#navlinkend {
+    border-right: 1px solid black;
+}
+.nav-link:hover {
+    border-bottom: 2px solid black;
+}

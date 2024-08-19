@@ -1,0 +1,35 @@
+<header>
+    <figure>
+        <a class="logo" routerLink="/"><img src="../assets/img/Logo.png" alt="Logo trouve_ton_artisan"></a>
+    </figure>
+    
+    <!-- Ajout d'une navbar responsive Bootstrap. -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" [routerLink]="'.'"></a>
+    
+            <!-- Bascule de la valeur de la propriété lorsqu'il y a clic sur le bouton burger. -->
+            <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
+    
+            <!-- Ajout de la directive ngbCollapse sur l'élément ci-dessous. -->
+            <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <!-- Fermeture du menu lorsqu'il y a clic sur un lien. -->
+                        <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Bâtiment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Fabrication</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlinkend" class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Alimentation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+

@@ -1,0 +1,82 @@
+footer {
+    background-color: #0074c7;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: inherit;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer::before {
+    right: 12rem;
+    left: 12rem;
+    position: absolute;
+    height: 4rem;
+    content: "";
+    background-color: #fff;
+    border-radius: 0 0 10rem 10rem;
+}
+footer::after{
+    position: absolute;
+    top: 3.5rem;
+    left: 16rem;
+    width: 0;
+    height: 0;
+    content: "";
+    transform: rotate(90deg);
+    border-right: 3.2rem solid rgba(0, 0, 0, 0);
+    border-bottom: 4rem solid #fff;
+    border-left: 3.2rem solid rgba(0, 0, 0, 0);
+}
+.contactBox{
+    display: flex;
+    flex-direction: column;
+}
+figure {
+    padding-top: 100px;
+}
+.contacts {
+    display: flex;
+}
+.contactBox {
+    padding: 1.5rem;
+}
+.ville {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.coordonnees {
+    margin-bottom: 0.5rem;
+}
+.mentions {
+    padding: 1.5rem 0;
+    border-top: .1rem solid #fff;
+    width:fit-content;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0rem;
+}
+li {
+    padding: 1rem;
+}
+.social {
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.social figure {
+    padding-top: 0;
+    padding-right: 5px;
+}

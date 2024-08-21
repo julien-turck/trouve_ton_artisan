@@ -1,3 +1,7 @@
 <app-header></app-header>
+@for (artisan of artisansArray; track artisan.id) {
+    <app-artisans-page [artisan]="artisan"></app-artisans-page>
+}
+
 <router-outlet />
 <app-footer></app-footer>

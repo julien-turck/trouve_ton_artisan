@@ -6,12 +6,26 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
+import { DonneesPersonnellesComponent } from './donnees-personnelles/donnees-personnelles.component';
+import { AccessibiliteComponent } from './accessibilite/accessibilite.component';
+import { CookiesComponent } from './cookies/cookies.component';
+import { FormulaireComponent } from './formulaire/formulaire.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AccueilComponent,
+    MentionsLegalesComponent,
+    DonneesPersonnellesComponent,
+    AccessibiliteComponent,
+    CookiesComponent,
+    FormulaireComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

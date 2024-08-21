@@ -13,6 +13,7 @@ import { AccessibiliteComponent } from './accessibilite/accessibilite.component'
 import { CookiesComponent } from './cookies/cookies.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { ErrorComponent } from './error/error.component';
+import { ArtisansPageComponent } from './artisans-page/artisans-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ErrorComponent } from './error/error.component';
     AccessibiliteComponent,
     CookiesComponent,
     FormulaireComponent,
-    ErrorComponent
+    ErrorComponent,
+    ArtisansPageComponent
   ],
   imports: [
     BrowserModule,

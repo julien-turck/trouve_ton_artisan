@@ -1,0 +1,18 @@
+<p>Liste des artisans</p>
+<div class="artisan-card">
+    <img [src]="artisan.imageUrl" [alt]="artisan.specialty">
+    <p>{{artisan.name}}</p>
+    <p>{{artisan.id}}</p>
+    <p>{{artisan.specialty}}</p>
+    <p><button (click)="onNote()">{{noteButtonText}}</button>{{artisan.note}}</p>
+    <p>{{artisan.location}}</p>
+    <p>{{artisan.about}}</p>
+    <p>{{artisan.email}}</p>
+    @if (artisan.website) {
+    <p>site Internet : {{artisan.website}}</p>
+    }@else {
+    <p>Site Internet non renseigné</p>
+    }
+    <p>{{artisan.category}}</p>
+    <p>{{artisan.top}}</p>
+</div>

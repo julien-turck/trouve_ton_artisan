@@ -24,7 +24,7 @@ footer::before {
 }
 footer::after{
     position: absolute;
-    top: 3.5rem;
+    top: 53rem;
     left: 16rem;
     width: 0;
     height: 0;
@@ -38,8 +38,14 @@ footer::after{
     display: flex;
     flex-direction: column;
 }
-figure {
+.logo{
+    height: 250px;
+    width: 300px;
     padding-top: 100px;
+}
+img {
+    height: 100%;
+    width: 100%;
 }
 .contacts {
     display: flex;

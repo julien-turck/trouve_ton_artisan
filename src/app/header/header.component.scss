@@ -3,6 +3,14 @@ header{
     box-shadow: 0 .2rem .6rem rgba(0,0,0,.0793474);
     display: flex;
 }
+figure{
+    height: 150px;
+    width: 300px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
 #navlinkend {
     border-right: 1px solid black;
 }

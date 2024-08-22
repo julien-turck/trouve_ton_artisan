@@ -16,16 +16,16 @@
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <!-- Fermeture du menu lorsqu'il y a clic sur un lien. -->
-                        <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Bâtiment</a>
+                        <a class="nav-link" routerLink="artisans" (click)="isMenuCollapsed = true" (click)='categorie = "batiment"'>Bâtiment</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Services</a>
+                        <a class="nav-link" routerLink="artisans" (click)="isMenuCollapsed = true" (click)='categorie = "services"'>Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Fabrication</a>
+                        <a class="nav-link" routerLink="artisans" (click)="isMenuCollapsed = true" (click)='categorie = "fabrication"'>Fabrication</a>
                     </li>
                     <li class="nav-item">
-                        <a id="navlinkend" class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Alimentation</a>
+                        <a id="navlinkend" class="nav-link" routerLink="artisans" (click)="isMenuCollapsed = true" (click)='categorie = "alimentation"'>Alimentation</a>
                     </li>
                 </ul>
             </div>

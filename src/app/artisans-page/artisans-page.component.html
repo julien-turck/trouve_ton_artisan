@@ -1,10 +1,10 @@
 <p>Liste des artisans</p>
 <div class="artisan-card">
     <img [src]="artisan.imageUrl" [alt]="artisan.specialty">
-    <p>{{artisan.name}}</p>
+    <h3>{{artisan.name}}</h3>
     <p>{{artisan.id}}</p>
     <p>{{artisan.specialty}}</p>
-    <p><button (click)="onNote()">{{noteButtonText}}</button>{{artisan.note}}</p>
+    <p>{{artisan.note}}</p>
     <p>{{artisan.location}}</p>
     <p>{{artisan.about}}</p>
     <p>{{artisan.email}}</p>

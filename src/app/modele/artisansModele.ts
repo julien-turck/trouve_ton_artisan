@@ -1,6 +1,7 @@
 export class artisansModele {
 
     website?: string;
+    idAuto: string;
 
     constructor(public id: number,
                 public name: string,
@@ -11,7 +12,9 @@ export class artisansModele {
                 public email: string,
                 public category: string,
                 public top: boolean,
-                public imageUrl: string){}
+                public imageUrl: string){
+        this.idAuto = crypto.randomUUID();        
+    }
 
     addNote(): void{
         this.note++
@@ -21,5 +24,9 @@ export class artisansModele {
     }
     setWebsite(website: string): void {
         this.website = website;
+    }
+    withWebSite(website: string): artisansModele {
+        this.setWebsite(website);
+        return this;
     }
 }

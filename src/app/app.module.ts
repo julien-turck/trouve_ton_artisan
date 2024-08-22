@@ -14,6 +14,7 @@ import { CookiesComponent } from './cookies/cookies.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { ErrorComponent } from './error/error.component';
 import { ArtisansPageComponent } from './artisans-page/artisans-page.component';
+import { ArtisansListeComponent } from './artisans-liste/artisans-liste.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ArtisansPageComponent } from './artisans-page/artisans-page.component';
     CookiesComponent,
     FormulaireComponent,
     ErrorComponent,
-    ArtisansPageComponent
+    ArtisansPageComponent,
+    ArtisansListeComponent
   ],
   imports: [
     BrowserModule,

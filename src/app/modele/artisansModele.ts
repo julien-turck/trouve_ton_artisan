@@ -11,16 +11,8 @@ export class artisansModele {
                 public about: string,
                 public email: string,
                 public category: string,
-                public top: boolean,
-                public imageUrl: string){
+                public top: boolean){
         this.idAuto = crypto.randomUUID();        
-    }
-
-    addNote(): void{
-        this.note++
-    }
-    removeNote(): void {
-        this.note--
     }
     setWebsite(website: string): void {
         this.website = website;

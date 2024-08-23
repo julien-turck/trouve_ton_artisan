@@ -146,7 +146,7 @@ export class ArtisansService {
         "Privas",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend ante sem, id volutpat massa fermentum nec. Praesent volutpat scelerisque mauris, quis sollicitudin tellus sollicitudin. ",
         "contact@truchon-traiteur.fr",
-        "Bâtiment",
+        "Alimentation",
         false,
         ).withWebSite("https://truchon-traiteur.fr"),
       new artisansModele(

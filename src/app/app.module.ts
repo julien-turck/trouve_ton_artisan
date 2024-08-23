@@ -15,6 +15,10 @@ import { FormulaireComponent } from './formulaire/formulaire.component';
 import { ErrorComponent } from './error/error.component';
 import { ArtisansPageComponent } from './artisans-page/artisans-page.component';
 import { ArtisansListeComponent } from './artisans-liste/artisans-liste.component';
+import { BatimentComponent } from './batiment/batiment.component';
+import { ServicesComponent } from './services/services.component';
+import { AlimentationComponent } from './alimentation/alimentation.component';
+import { FabricationComponent } from './fabrication/fabrication.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { ArtisansListeComponent } from './artisans-liste/artisans-liste.componen
     FormulaireComponent,
     ErrorComponent,
     ArtisansPageComponent,
-    ArtisansListeComponent
+    ArtisansListeComponent,
+    BatimentComponent,
+    ServicesComponent,
+    AlimentationComponent,
+    FabricationComponent
   ],
   imports: [
     BrowserModule,

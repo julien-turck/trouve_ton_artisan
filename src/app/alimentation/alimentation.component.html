@@ -1,0 +1,13 @@
+<section>
+    <div class="intro">
+        <h2>Alimentation</h2>
+        <p>Dans cette section, retrouvez tous les artisans liés aux secteurs d'activités de l'alimentation.</p>
+    </div>
+    <div class="cardBox">
+        @for (artisan of artisansArray; track artisan.id){
+        @if (artisan.category == "Alimentation"){
+        <app-artisans-page [artisan]="artisan"></app-artisans-page>
+        }
+        }
+    </div>
+</section>

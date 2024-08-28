@@ -6,7 +6,7 @@
     <div class="cardBox">
         @for (artisan of artisansArray; track artisan.id){
             @if (artisan.category == "Services"){
-            <app-artisans-page [artisan]="artisan"></app-artisans-page>
+            <app-artisans-page [artisan]="artisan" class="card"></app-artisans-page>
             }
         }
     </div>

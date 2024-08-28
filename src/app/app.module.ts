@@ -19,6 +19,7 @@ import { BatimentComponent } from './batiment/batiment.component';
 import { ServicesComponent } from './services/services.component';
 import { AlimentationComponent } from './alimentation/alimentation.component';
 import { FabricationComponent } from './fabrication/fabrication.component';
+import { SingleArtisanComponent } from './single-artisan/single-artisan.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FabricationComponent } from './fabrication/fabrication.component';
     BatimentComponent,
     ServicesComponent,
     AlimentationComponent,
-    FabricationComponent
+    FabricationComponent,
+    SingleArtisanComponent
   ],
   imports: [
     BrowserModule,

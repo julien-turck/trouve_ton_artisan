@@ -12,10 +12,11 @@ import { AlimentationComponent } from './alimentation/alimentation.component';
 import { BatimentComponent } from './batiment/batiment.component';
 import { FabricationComponent } from './fabrication/fabrication.component';
 import { ServicesComponent } from './services/services.component';
+import { SingleArtisanComponent } from './single-artisan/single-artisan.component';
 
 const routes: Routes = [
   {path: "", component: AccueilComponent},
-  {path: "artisans", component: ArtisansListeComponent},
+  {path: "artisans/:idAuto", component: SingleArtisanComponent},
   {path: "alimentation", component: AlimentationComponent},
   {path: "batiment", component: BatimentComponent},
   {path: "fabrication", component: FabricationComponent},

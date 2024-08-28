@@ -198,4 +198,13 @@ export class ArtisansService {
     getArtisan(): artisansModele[] {
       return [...this.artisansService];
     }
+
+    getArtisanById(artisanId: string): artisansModele {
+      const foundArtisan = this.artisansService.find(artisansModele =>  artisansModele.idAuto === artisanId);
+      if(!foundArtisan) {
+        throw new Error ('artisan inconnu');
+      }
+      return foundArtisan;
+    }
+
 }

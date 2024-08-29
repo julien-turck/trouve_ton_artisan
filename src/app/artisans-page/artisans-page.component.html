@@ -1,19 +1,9 @@
 <article>
     <div class="artisan-card">
         <h3>{{artisan.name}}</h3>
-        <p>{{artisan.id}}</p>
         <p>{{artisan.specialty}}</p>
         <p><ngb-rating [rate]=artisan.note /></p>
         <p>{{artisan.location}}</p>
-        <p>{{artisan.about}}</p>
-        <p>{{artisan.email}}</p>
-        @if (artisan.website) {
-        <p>site Internet : {{artisan.website}}</p>
-        }@else {
-        <p>Site Internet non renseigné</p>
-        }
-        <p>{{artisan.category}}</p>
-        <p>{{artisan.top}}</p>
         <button (click)="onViewArtisan()">En savoir plus</button>
     </div>
 </article>

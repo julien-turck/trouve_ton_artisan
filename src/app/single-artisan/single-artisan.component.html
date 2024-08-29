@@ -1,7 +1,6 @@
 <article>
     <div class="artisan-card">
         <h3>{{artisan.name}}</h3>
-        <p>{{artisan.id}}</p>
         <p>{{artisan.specialty}}</p>
         <p><ngb-rating [rate]=artisan.note /></p>
         <p>{{artisan.location}}</p>
@@ -12,7 +11,5 @@
         }@else {
         <p>Site Internet non renseigné</p>
         }
-        <p>{{artisan.category}}</p>
-        <p>{{artisan.top}}</p>
     </div>
 </article>

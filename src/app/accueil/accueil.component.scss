@@ -2,6 +2,10 @@ main {
     display: flex;
     flex-direction: column;
     color: #384050;
+    text-align: justify;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 h2, h3 {
     color: #00497c;
@@ -12,4 +16,5 @@ h2 {
 }
 section {
     display: flex;
+    flex-direction: column;
 }

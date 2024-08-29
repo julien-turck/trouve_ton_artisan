@@ -3,7 +3,5 @@
 }
 .cardBox {
     display: flex;
-}
-.card {
-    width: 20%;
+    flex-direction: column;
 }

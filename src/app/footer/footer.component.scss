@@ -29,8 +29,9 @@ footer::after{
     border-left: 3.2rem solid rgba(0, 0, 0, 0);
 }
 .logo{
-    height: 250px;
+    height: 150px;
     width: 300px;
+    margin-bottom: 0px;
 }
 img {
     height: 100%;
@@ -52,17 +53,11 @@ img {
 }
 .mentions {
     border-top: .1rem solid #f1f8fc;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-ul {
-    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
-    padding-left: 0px;
-}
-li {
-    width: 25%;
-}
+    justify-content: space-between;
+}    
 .social {
     width: 100%;
     background-color: #f1f8fc;
@@ -84,4 +79,36 @@ li {
 .social img {
     height: 100%;
     width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .contactsBox {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        flex-wrap: nowrap;
+    }
+    .contactBox {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 992px) {
+    footer::before {
+        height: 4rem;
+        width: 90%;
+        content: "";
+        background-color: #f1f8fc;
+        border-radius: 0 0 10rem 10rem;
+        margin-left: 50px;
+    }
+        footer::after {
+            position: absolute;
+            left: 10%;
+            width: 0;
+            height: 0;
+            content: "";
+            transform: rotate(90deg);
+            border-right: 3.2rem solid rgba(0, 0, 0, 0);
+            border-bottom: 4rem solid #f1f8fc;
+            border-left: 3.2rem solid rgba(0, 0, 0, 0);
+        }
 }

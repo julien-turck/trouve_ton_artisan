@@ -5,3 +5,38 @@
     display: flex;
     flex-direction: column;
 }
+.card {
+    margin-bottom: 5px;
+    width: fit-content;
+}
+@media screen and (min-width: 768px) {
+    .cardBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .cardBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 33.33%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .cardBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 25%;
+    }
+}

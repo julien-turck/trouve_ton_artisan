@@ -1,7 +1,45 @@
 .intro {
     text-align: center;
 }
+
 .cardBox {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .cardBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .cardBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 33.33%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .cardBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 25%;
+    }
 }

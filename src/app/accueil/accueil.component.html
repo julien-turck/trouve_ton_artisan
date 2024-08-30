@@ -28,10 +28,10 @@
         <p>Chaque mois, retrouvez un focus sur trois artisans de notre région.<br>L'occasion pour nous, de mettre en valeur leur travail.<br> Pour vous, de découvrir des ouvriers qualifiés près de chez vous.</p>
         <section>
             @for (artisan of artisansArray; track artisan.id){
-            @if (artisan.top == true){
-            <app-artisans-page [artisan]="artisan"></app-artisans-page>
+                @if (artisan.top == true){
+                <app-artisans-page class="card" [artisan]="artisan"></app-artisans-page>
+                }
             }
-        }
         </section>  
     </div>
 </main>

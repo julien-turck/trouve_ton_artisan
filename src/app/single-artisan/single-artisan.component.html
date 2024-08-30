@@ -1,5 +1,6 @@
-<article>
+<main>
     <div class="artisan-card">
+        <a [routerLink]="artisan.category">retour {{artisan.category}}</a>
         <h3>{{artisan.name}}</h3>
         <p>{{artisan.specialty}}</p>
         <p><ngb-rating [rate]=artisan.note /></p>
@@ -12,4 +13,4 @@
         <p>Site Internet non renseigné</p>
         }
     </div>
-</article>
+</main>

@@ -1,13 +1,13 @@
-<section>
+<main>
     <div class="intro">
         <h2>Services</h2>
-        <p>Dans cette section, retrouvez tous les artisans liés aux secteurs d'activités du service à la personne.</p>
+        <p>Retrouvez ici tous les artisans liés aux secteurs d'activités du service à la personne.</p>
     </div>
     <div class="cardBox">
         @for (artisan of artisansArray; track artisan.id){
             @if (artisan.category == "Services"){
-            <app-artisans-page [artisan]="artisan" class="card"></app-artisans-page>
+                <app-artisans-page class="card" [artisan]="artisan" class="card"></app-artisans-page>
             }
         }
     </div>
-</section>
+<main>

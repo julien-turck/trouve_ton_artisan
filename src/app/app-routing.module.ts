@@ -17,6 +17,10 @@ import { SingleArtisanComponent } from './single-artisan/single-artisan.componen
 const routes: Routes = [
   {path: "", component: AccueilComponent},
   {path: "artisans/:idAuto", component: SingleArtisanComponent},
+  {path: "artisans/:idAuto/Alimentation", component: AlimentationComponent},
+  {path: "artisans/:idAuto/Bâtiment", component: BatimentComponent},
+  {path: "artisans/:idAuto/Fabrication", component: FabricationComponent},
+  {path: "artisans/:idAuto/Services", component: ServicesComponent},
   {path: "alimentation", component: AlimentationComponent},
   {path: "batiment", component: BatimentComponent},
   {path: "fabrication", component: FabricationComponent},

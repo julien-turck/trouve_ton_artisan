@@ -20,6 +20,8 @@ import { ServicesComponent } from './services/services.component';
 import { AlimentationComponent } from './alimentation/alimentation.component';
 import { FabricationComponent } from './fabrication/fabrication.component';
 import { SingleArtisanComponent } from './single-artisan/single-artisan.component';
+import { NgArrayPipesModule } from 'ngx-pipes';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { SingleArtisanComponent } from './single-artisan/single-artisan.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    NgArrayPipesModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

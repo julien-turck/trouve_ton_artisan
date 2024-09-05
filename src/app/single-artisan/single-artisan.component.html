@@ -1,16 +1,39 @@
 <main>
     <div class="artisan-card">
         <a [routerLink]="artisan.category">retour {{artisan.category}}</a>
-        <h3>{{artisan.name}}</h3>
+        <h2>{{artisan.name}}</h2>
         <p>{{artisan.specialty}}</p>
         <p><ngb-rating [rate]=artisan.note /></p>
         <p>{{artisan.location}}</p>
-        <p>{{artisan.about}}</p>
-        <p>{{artisan.email}}</p>
-        @if (artisan.website) {
-        <p>site Internet : {{artisan.website}}</p>
-        }@else {
-        <p>Site Internet non renseigné</p>
-        }
+        <div>
+            <h3>A propos</h3>
+            <p>{{artisan.about}}</p>
+        </div>        
+        <div class="form">
+            <h3>Prendre contact</h3>
+            <form>
+                <div class="input">
+                    <label for="firstname">
+                        <input type="text" name="firstname" placeholder="Nom" required>
+                    </label>
+                    <label for="object">
+                        <input type="text" name="object" placeholder="Objet" required>
+                    </label>
+                </div>                
+                <label for="message">
+                    <textarea name="message" placeholder="Votre message" required></textarea>
+                </label>
+                <input class="submit" type="submit" value="Envoyer">
+            </form>
+        </div>
+        <div>
+            <h3>Site Internet</h3>
+            @if (artisan.website) {
+            <a [href]="artisan.website" target="_blank">{{artisan.website}}</a>
+            }@else {
+            <p>Site Internet non renseigné</p>
+            }
+        </div>
+       
     </div>
 </main>

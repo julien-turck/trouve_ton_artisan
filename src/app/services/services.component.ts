@@ -5,15 +5,33 @@ import { ArtisansService } from '../artisans.service';
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
-  styleUrl: './services.component.scss'
+  styleUrl: './services.component.scss',
 })
 export class ServicesComponent implements OnInit {
-   artisansArray!: artisansModele [];
-  
+  artisansArray!: artisansModele[];
+  searchText = '';
+  choiceText = 'Chercher un artisan';
+  filter = 'name';
 
-   constructor(private artisansService: ArtisansService){}
+  constructor(private artisansService: ArtisansService) {}
 
   ngOnInit(): void {
     this.artisansArray = this.artisansService.getArtisan();
+  }
+  choice(category: string) {
+    this.filter = category;
+    switch (category) {
+      case 'name':
+        this.choiceText = 'Chercher un artisan';
+        break;
+      case 'specialty':
+        this.choiceText = 'Chercher une spécialité';
+        break;
+      case 'location':
+        this.choiceText = 'Chercher une commune';
+        break;
+      default:
+        this.choiceText = 'Désolé, votre recherche est incorrect';
+    }
   }
 }

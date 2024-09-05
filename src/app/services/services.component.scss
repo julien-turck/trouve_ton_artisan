@@ -1,34 +1,64 @@
-.intro {
+h2 {
     text-align: center;
 }
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#dropdownBasic1 {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
 .cardBox {
     display: flex;
     flex-direction: column;
 }
+
 .card {
     margin-bottom: 5px;
-    width: fit-content;
+    width: 100%;
 }
+
 @media screen and (min-width: 768px) {
+    .search {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #dropdownBasic1 {
+        margin-right: 5px;
+        margin-bottom: 0px;
+    }
+
     .cardBox {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .card {
         width: 50%;
     }
 }
+
 @media screen and (min-width: 992px) {
     .cardBox {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .card {
         width: 33.33%;
     }
 }
+
 @media screen and (min-width: 1200px) {
     .cardBox {
         display: flex;

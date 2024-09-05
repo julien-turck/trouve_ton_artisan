@@ -2,12 +2,27 @@
     <div class="intro">
         <h2>Bâtiment</h2>
         <p>Retrouvez ici tous les artisans liés aux secteurs d'activités du bâtiment.</p>
+        <div class="search">
+            <div>
+                <div ngbDropdown class="d-inline-block">
+                    <button type="button" id="dropdownBasic1" ngbDropdownToggle>
+                        Modifier le champ de recherche
+                    </button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button (click)="choice('name')" ngbDropdownItem>Artisan</button>
+                        <button (click)="choice('specialty')" ngbDropdownItem>Spécialité</button>
+                        <button (click)="choice('location')" ngbDropdownItem>Commune</button>
+                    </div>
+                </div>
+            </div>
+            <input type="text" [(ngModel)]="searchText" placeholder={{this.choiceText}} />
+        </div>
     </div>
     <div class="cardBox">
-        @for (artisan of artisansArray; track artisan.id){
-            @if (artisan.category == "Bâtiment"){
-                <app-artisans-page class="card" [artisan]="artisan"></app-artisans-page>
-                }
+        @for (artisan of artisansArray | filterBy: [this.filter]: this.searchText; track artisan.id){
+            @if (artisan.category === "Bâtiment"){
+            <app-artisans-page class="card" [artisan]="artisan" class="card"></app-artisans-page>
+            }
         }
     </div>
-</main>
+<main>

@@ -41,9 +41,14 @@ textarea {
     padding: 5px 10px;
     font-size: 14px;
 }
-@media screen and (min-width: 992px) {
-    .input {
-        display: flex;
-        flex-direction: row;
+@media screen and (min-width: 768px) {
+    .artisan-card {
+        width: 80%;
     }
+    .input input {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 992px) {
+    
 }

@@ -10,7 +10,7 @@ import { ArtisansService } from '../artisans.service';
 export class AlimentationComponent implements OnInit {
   artisansArray!: artisansModele[];
   searchText = '';
-  choiceText = 'Chercher un artisan';
+  choiceText = 'Rechercher par artisan';
   filter = 'name';
 
   constructor(private artisansService: ArtisansService) {}
@@ -22,13 +22,13 @@ export class AlimentationComponent implements OnInit {
     this.filter = category;
     switch (category) {
       case 'name':
-        this.choiceText = 'Chercher un artisan';
+        this.choiceText = 'Rechercher par artisan';
         break;
       case 'specialty':
-        this.choiceText = 'Chercher une spécialité';
+        this.choiceText = 'Rechercher par spécialité';
         break;
       case 'location':
-        this.choiceText = 'Chercher une commune';
+        this.choiceText = 'Rechercher par commune';
         break;
       default:
         this.choiceText = 'Désolé, votre recherche est incorrect';

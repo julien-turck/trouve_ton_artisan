@@ -11,19 +11,20 @@
         </div>        
         <div class="form">
             <h3>Prendre contact</h3>
+            <p>{{message}}</p>
             <form>
                 <div class="input">
                     <label for="firstname">
-                        <input type="text" name="firstname" placeholder="Nom" required>
+                        <input class="info" type="text" [(ngModel)]="nom" name="firstname" placeholder="Nom" required>
                     </label>
                     <label for="object">
-                        <input type="text" name="object" placeholder="Objet" required>
+                        <input class="info" type="text" [(ngModel)]="objet" name="object" placeholder="Objet" required>
                     </label>
                 </div>                
                 <label for="message">
-                    <textarea name="message" placeholder="Votre message" required></textarea>
+                    <textarea [(ngModel)]="texte" name="message" placeholder="Votre message" required></textarea>
                 </label>
-                <input class="submit" type="submit" value="Envoyer">
+                <input (click)="onSubmit()" class="submit" type="submit" value="Envoyer">
             </form>
         </div>
         <div>

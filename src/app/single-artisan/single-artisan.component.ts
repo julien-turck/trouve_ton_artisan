@@ -22,15 +22,17 @@ export class SingleArtisanComponent implements OnInit {
     private artisansService: ArtisansService,
     private route: ActivatedRoute
   ) {
-    // customize default values of ratings used by this component tree
+    /*permet de customiser les valeurs par défaut de la notation étoilée*/
     config.max = 5;
     config.readonly = true;
   }
 
   ngOnInit(): void {
+    /*récupération et exploitation de l'ID permettant l'affichage du bon artisan demandé*/
     const artisanId = this.route.snapshot.params['idAuto'];
     this.artisan = this.artisansService.getArtisanById(artisanId);
   }
+  /*fonction qui vérifie la présence d'un contenu dans chacun des champs du formulaire avant de permettre l'envoi du message*/
   onSubmit() {
     if (!this.nom || !this.objet || !this.texte) {
       this.message =

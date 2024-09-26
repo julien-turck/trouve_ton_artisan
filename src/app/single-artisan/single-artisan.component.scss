@@ -1,6 +1,9 @@
+main {
+    display: flex;
+    align-items: center;
+}
 .artisan-card {
-    margin: 20px auto;
-    padding: 10px 30px;
+    padding: 30px;
     background-color: white;
 }
 h3 {
@@ -48,7 +51,4 @@ textarea {
     .input input {
         width: 100%;
     }
-}
-@media screen and (min-width: 992px) {
-    
 }

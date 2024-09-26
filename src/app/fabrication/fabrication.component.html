@@ -4,6 +4,7 @@
         <p>Retrouvez ici tous les artisans liés aux secteurs d'activités de fabrication.</p>
         <div class="search">
             <div>
+                <!--implémentation de la liste de choix de catégorie-->
                 <div ngbDropdown class="d-inline-block">
                     <button type="button" id="dropdownBasic1" ngbDropdownToggle>
                         Modifier le champ de recherche 
@@ -15,10 +16,14 @@
                     </div>
                 </div>
             </div>
+            <!--implémentation de la barre de recherche-->
             <input type="text" [(ngModel)]="searchText" placeholder={{this.choiceText}} />
         </div>
     </div>
     <div class="cardBox">
+        <!--Création de la liste des artisans liés aux métiers de l'alimetation.
+            Pour être pris en compte, l'artisan doit avoir sa donnée du service correspondante à la ligne category du modèle doit être égale à true
+            filterBy : filtre pour la recherche par nom / commune / métier. Le filtre est disponible une fois ngx-pipes installé-->
         @for (artisan of artisansArray | filterBy: [this.filter]: this.searchText; track artisan.id){
             @if (artisan.category === "Fabrication"){
             <app-artisans-page class="card" [artisan]="artisan" class="card"></app-artisans-page>

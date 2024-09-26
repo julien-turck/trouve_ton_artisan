@@ -4,6 +4,10 @@ header{
     display: flex;
     justify-content: space-between;
 }
+button {
+    background-color: #fff;
+    color: #0074c7;
+}
 figure{
     height: 150px;
     width: 300px;
@@ -14,4 +18,9 @@ img{
 }
 .nav-link:hover {
     border-bottom: 1.5px solid black;
+}
+@media screen and (min-width: 992px) {
+    button {
+        visibility: hidden;
+    }
 }

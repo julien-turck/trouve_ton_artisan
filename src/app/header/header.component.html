@@ -9,7 +9,7 @@
             <a class="navbar-brand" [routerLink]="'.'"></a>
     
             <!-- Bascule de la valeur de la propriété lorsqu'il y a clic sur le bouton burger. -->
-            <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
+            <button type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776; <br>Menu</button>
     
             <!-- Ajout de la directive ngbCollapse sur l'élément ci-dessous. -->
             <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">

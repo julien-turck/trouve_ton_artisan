@@ -14,10 +14,11 @@ export class AlimentationComponent implements OnInit {
   filter = 'name';
 
   constructor(private artisansService: ArtisansService) {}
-
+  /*permet l'ajout des données du service au tableau*/
   ngOnInit(): void {
     this.artisansArray = this.artisansService.getArtisan();
   }
+  /*fonction qui permet le changement de choix de catégorie de la recherche*/
   choice(category: string) {
     this.filter = category;
     switch (category) {

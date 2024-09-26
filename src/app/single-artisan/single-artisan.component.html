@@ -3,6 +3,7 @@
         <a [routerLink]="artisan.category">retour {{artisan.category}}</a>
         <h2>{{artisan.name}}</h2>
         <p>{{artisan.specialty}}</p>
+        <!--Notation avec étoile importée de Bootstrap-->
         <p><ngb-rating [rate]=artisan.note /></p>
         <p>{{artisan.location}}</p>
         <div>
@@ -28,6 +29,7 @@
             </form>
         </div>
         <div>
+            <!--Affichage du site web de l'artisan en fonction de la présence d'une adresse renseignée ou non-->
             <h3>Site Internet</h3>
             @if (artisan.website) {
             <a [href]="artisan.website" target="_blank">{{artisan.website}}</a>

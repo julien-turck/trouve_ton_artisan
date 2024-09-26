@@ -1,12 +1,12 @@
 <main>
     <div class="modeEmploi">
         <h2>Comment trouver mon artisan ?</h2>
-        <p>Découvrez en 4 étapes, comment trouverez l'artisan dont vous avez besoin, au plus proche de chez vous.</p>
+        <p>Découvrez en 4 étapes, comment trouver l'artisan dont vous avez besoin, au plus proche de chez vous.</p>
         <div class="etape">
             <img>
             <h3>1. Choisir la catégorie d'artisanat dans le menu</h3>
             <div class="explain">
-                <p class="col">Situées dans la barre des menus, cliquez sur la catégorie qui vous intéresse.<br>Sur mobile et tablette, cliquez sur le bouton de menu lateral pour les dévoiler.</p>
+                <p class="col">Situées dans la barre des menus, cliquez sur la catégorie qui vous intéresse.<br>Sur mobile et tablette, cliquez sur le bouton de menu latéral pour les dévoiler.</p>
                 <figure>
                     <img class="col" src="menu.png" alt="menu du site">
                 </figure>                
@@ -49,7 +49,9 @@
     </div>
     <div class="top3">
         <h2>Les trois artisans du mois</h2>
-        <p>Chaque mois, retrouvez un focus sur trois artisans de notre région.<br>L'occasion pour nous, de mettre en valeur leur travail.<br> Pour vous, de découvrir des ouvriers qualifiés près de chez vous.</p>
+        <p>Chaque mois, retrouvez un focus présentant trois artisans de notre région.<br>L'occasion pour nous, de mettre en valeur leur travail.<br> Pour vous, de découvrir des ouvriers qualifiés près de chez vous.</p>
+        <!--Création de la liste des artisans du top 3 du mois.
+        Pour être pris en compte, l'artisan doit avoir sa données du service correspondante à la ligne top du modèle doit être égale à true-->
         <section>
             @for (artisan of artisansArray; track artisan.id){
                 @if (artisan.top == true){

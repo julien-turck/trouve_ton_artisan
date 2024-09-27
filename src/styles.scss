@@ -1,8 +1,16 @@
-/* Importing Bootstrap SCSS file. */
+/* Importation de Bootstrap*/
 @import 'bootstrap/scss/bootstrap';
+@font-face {
+    font-family: graphik;
+    src: url(../src/app/polices/Graphik-Bold-Trial.otf);
+    src: url(../src/app/polices/Graphik-Bold-Trial.woff);
+    src: url(../src/app/polices/Graphik-Regular-Trial.otf);
+    src: url(../src/app/polices/Graphik-Regular-Trial.woff);
+}
 * {
     color: #384050;
     text-align:justify;
+    font-family: graphik, sans-serif;
 }
 h2, h3 {
     color: #00497c;

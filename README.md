@@ -62,8 +62,9 @@ Pour se faire, toujours dans Node.js, une fois placé dans le dossier du projet,
 ng build
 ```
 
-Un dossier Build s'inserera dans le dossier complet du projet. C'est le contenu de ce dossier qu'il faudra transférer sur votre serveur dédié par votre hebergeur.
+Un dossier Dist s'inserera dans le dossier complet du projet. C'est le contenu de ce dossier qu'il faudra transférer sur votre serveur dédié par votre hebergeur.
 Le transfert se fait en utilisant le protocole FTP, à l'aide d'un outil de transfert tiers comme Filezilla en téléchargeant la version "client" à cette adresse : [Filezilla](https://filezilla-project.org).
+Attention : Lors de la construction du dossier, une grande partie du contenu est insérer dans un dossier Browser. Ce contenu devra être retiré du dossier et copié au même niveau d'arborescence que le reste du dossier Dist.
 
 #### Aide supplémentaire
 

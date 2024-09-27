@@ -1,9 +1,8 @@
 <main>
-    <div class="modeEmploi">
+    <article class="modeEmploi">
         <h2>Comment trouver mon artisan ?</h2>
         <p>Découvrez en 4 étapes, comment trouver l'artisan dont vous avez besoin, au plus proche de chez vous.</p>
-        <div class="etape">
-            <img>
+        <section class="etape">
             <h3>1. Choisir la catégorie d'artisanat dans le menu</h3>
             <div class="explain">
                 <p class="col">Situées dans la barre des menus, cliquez sur la catégorie qui vous intéresse.<br>Sur mobile et tablette, cliquez sur le bouton de menu latéral pour les dévoiler.</p>
@@ -11,9 +10,8 @@
                     <img class="col" src="menu.png" alt="menu du site">
                 </figure>                
             </div>            
-        </div>
-        <div class="etape">
-            <img>
+        </section>
+        <section class="etape">
             <h3>2. Choisir un artisan</h3>
             <div class="explain">
                 <p class="col">Faites défiler les différentes fiches afin de trouver l'artisan, le plus proche de chez vous et qui correspond à votre
@@ -23,9 +21,8 @@
                     <img class="col" src="search.png" alt="barre de recherche du site">
                 </figure>
             </div>
-        </div>
-        <div class="etape">
-            <img>
+        </section>
+        <section class="etape">
             <h3>3. Le contacter via le formulaire de contact</h3>
             <div class="explain">
                 <p class="col">Une fois un artisan trouvé, cliquez sur "en savoir plus" pour accéder à sa fiche complète.<br> Remplissez tous les
@@ -35,9 +32,8 @@
                     <img class="col" src="formulaire.png" alt="formulaire de contact du site">
                 </figure>
             </div>
-        </div>
-        <div class="etape">
-            <img>
+        </section>
+        <section class="etape">
             <h3>4. Une réponse sera apportée sous 48h</h3>
             <div class="explain">
                 <p class="col">Tous les artisans répertoriés sur notre site s'engage à vous apporter une réponse sous les 48 heures ouvrés.</p>
@@ -45,20 +41,20 @@
                     <img class="col" src="48h.png" alt="logo 48 heures">
                 </figure>
             </div>
-        </div>
-    </div>
-    <div class="top3">
+        </section>
+    </article>
+    <article class="top3">
         <h2>Les trois artisans du mois</h2>
         <p>Chaque mois, retrouvez un focus présentant trois artisans de notre région.<br>L'occasion pour nous, de mettre en valeur leur travail.<br> Pour vous, de découvrir des ouvriers qualifiés près de chez vous.</p>
         <!--Création de la liste des artisans du top 3 du mois.
         Pour être pris en compte, l'artisan doit avoir sa données du service correspondante à la ligne top du modèle doit être égale à true-->
-        <section>
+        <div id="top3">
             @for (artisan of artisansArray; track artisan.id){
                 @if (artisan.top == true){
                 <app-artisans-page class="card" [artisan]="artisan"></app-artisans-page>
                 }
             }
-        </section>  
-    </div>
+        </div>  
+    </article>
 </main>
 

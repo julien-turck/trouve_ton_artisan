@@ -1,5 +1,5 @@
 <main>
-    <div class="intro">
+    <section class="intro">
         <h2>Alimentation</h2>
         <p>Retrouvez ici tous les artisans liés aux secteurs d'activités de l'alimentation.</p>
         <div class="search">
@@ -19,7 +19,7 @@
             <!--implémentation de la barre de recherche-->
             <input type="text" [(ngModel)]="searchText" placeholder={{this.choiceText}} />
         </div>
-    </div>
+    </section>
     <div class="cardBox">
         <!--Création de la liste des artisans liés aux métiers de l'alimetation.
             Pour être pris en compte, l'artisan doit avoir sa donnée du service correspondante à la ligne category du modèle doit être égale à true
